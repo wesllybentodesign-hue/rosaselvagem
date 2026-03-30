@@ -4,18 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Compre pelo WhatsApp | Rosa Selvagem</title>
-<meta name="description" content="Compre os melhores produtos Rosa Selvagem com até 50% OFF direto pelo WhatsApp. Frete grátis acima de R$100, parcele em até 6x sem juros.">
-<link rel="dns-prefetch" href="https://fonts.googleapis.com">
-<link rel="dns-prefetch" href="https://fonts.gstatic.com">
-<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T6ND5J84');</script>
+<!-- End Google Tag Manager -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script>window.dataLayer=window.dataLayer||[];window.dataLayer.push({'gtm.start':new Date().getTime(),event:'gtm.js'});</script>
-<script defer src="https://www.googletagmanager.com/gtm.js?id=GTM-T6ND5J84"></script>
-<script>window.si=window.si||function(){(window.si.q=window.si.q||[]).push(arguments)};</script>
-<script defer src="/_vercel/speed-insights/script.js"></script>
-<link rel="preload" as="image" href="img/img-2.webp">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Poppins',sans-serif;background:#fafafa;color:#1a1a1a;-webkit-font-smoothing:antialiased}
@@ -23,11 +20,11 @@ img{max-width:100%;display:block}button{font-family:inherit;cursor:pointer}
 :root{--pk:#C2185B;--pk2:#E91E63;--pkd:#880E4F;--gr:#00897B;--wa:#25D366;--wad:#128C7E}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 @keyframes slideUp{from{transform:translateY(100%)}to{transform:translateY(0)}}
+@keyframes pop{0%{transform:scale(1)}50%{transform:scale(1.2)}100%{transform:scale(1)}}
 @keyframes chk{from{transform:scale(0)}to{transform:scale(1)}}
 @keyframes mrq{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @keyframes pls{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.4)}50%{box-shadow:0 0 0 10px rgba(37,211,102,0)}}
 @keyframes shm{0%{background-position:-200% 0}100%{background-position:200% 0}}
-@keyframes oeScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 .tk{background:var(--pk);overflow:hidden;white-space:nowrap;height:32px;display:flex;align-items:center}
 .tk-t{display:inline-flex;animation:mrq 18s linear infinite}
 .tk-i{color:#fff;font-size:11px;font-weight:500;padding:0 28px}
@@ -41,17 +38,22 @@ img{max-width:100%;display:block}button{font-family:inherit;cursor:pointer}
 .ct-b svg{width:18px;height:18px}
 .ct-bg{position:absolute;top:-5px;right:-5px;background:var(--wa);color:#fff;font-size:9px;font-weight:800;width:18px;height:18px;border-radius:50%;display:none;align-items:center;justify-content:center;border:2px solid #fff}
 .ct-bg.on{display:flex}
+.mk{display:block;max-width:960px;margin:16px auto 0;padding:0 16px}
+.mk a{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px 20px;background:linear-gradient(135deg,var(--pkd),var(--pk));color:#fff;text-decoration:none;border-radius:12px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;transition:.2s;box-shadow:0 4px 16px rgba(194,24,91,.2)}
+.mk a:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.mk a svg{width:18px;height:18px;flex-shrink:0}
 .hr{width:100%;max-width:960px;margin:0 auto;display:block}
-.hr img{width:100%;height:auto;aspect-ratio:1920/800;display:block}
+.hr img{width:100%;height:auto;display:block}
 .sc{max-width:960px;margin:0 auto;padding:22px 16px 8px}
 .sc-hd{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:16px;gap:4px}
-.sc-t{font-size:18px;font-weight:700}.sc-c{font-size:11px;color:var(--pk);font-weight:600}
+.sc-t{font-size:18px;font-weight:700}
+.sc-c{font-size:11px;color:var(--pk);font-weight:600}
 .gd{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
 @media(max-width:500px){.gd{grid-template-columns:repeat(2,1fr);gap:8px}}
 .cd{background:#fff;border-radius:12px;overflow:hidden;border:2px solid transparent;box-shadow:0 2px 8px rgba(0,0,0,.04);cursor:pointer;position:relative;display:flex;flex-direction:column;transition:.25s;animation:fadeUp .4s ease both}
 .cd:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.09)}
 .cd.sel{border-color:var(--pk);box-shadow:0 0 0 1px var(--pk),0 6px 20px rgba(194,24,91,.1)}
-.cd-iw{width:100%;aspect-ratio:1/1;background:#f5f5f5;position:relative;overflow:hidden}
+.cd-iw{width:100%;aspect-ratio:1;background:#f5f5f5;position:relative;overflow:hidden}
 .cd-sk{position:absolute;inset:0;background:linear-gradient(90deg,#f0f0f0 25%,#e8e8e8 50%,#f0f0f0 75%);background-size:200% 100%;animation:shm 1.5s infinite}
 .cd-im{width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .3s}
 .cd-im.ld{opacity:1}
@@ -62,7 +64,8 @@ img{max-width:100%;display:block}button{font-family:inherit;cursor:pointer}
 .cd-nm{font-size:10px;font-weight:600;color:#333;line-height:1.3;margin-bottom:6px;min-height:26px;text-transform:uppercase;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .cd-pr{margin-top:auto}
 .cd-p1{display:flex;align-items:baseline;gap:5px;flex-wrap:wrap}
-.cd-pv{font-size:15px;font-weight:800}.cd-po{font-size:10px;color:#bbb;text-decoration:line-through}
+.cd-pv{font-size:15px;font-weight:800}
+.cd-po{font-size:10px;color:#bbb;text-decoration:line-through}
 .cd-pi{font-size:9px;color:#666;margin-top:1px}.cd-pi strong{font-weight:700}
 .cd-fs{font-size:9px;font-weight:600;margin-top:2px}
 .cd-fs.fr{color:var(--gr)}.cd-fs.ec{color:#888}
@@ -73,14 +76,9 @@ img{max-width:100%;display:block}button{font-family:inherit;cursor:pointer}
 .qt-b{width:28px;height:28px;border-radius:50%;border:1px solid #ddd;background:#fff;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;color:var(--pk);transition:.15s}
 .qt-b:hover{background:#f8f8f8}
 .qt-v{font-size:14px;font-weight:800;color:var(--pk);min-width:16px;text-align:center}
-.mk{display:block;max-width:960px;margin:16px auto 0;padding:0 16px}
-.mk a{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:14px 20px;background:linear-gradient(135deg,var(--pkd),var(--pk));color:#fff;text-decoration:none;border-radius:12px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;transition:.2s;box-shadow:0 4px 16px rgba(194,24,91,.2)}
-.mk a:hover{filter:brightness(1.08);transform:translateY(-1px)}
-.mk a svg{width:18px;height:18px;flex-shrink:0}
 .tb{max-width:960px;margin:24px auto 0;padding:0 16px 16px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px}
 .tb-i{background:#fff;border-radius:10px;padding:12px 10px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.04)}
-.tb-ic{width:28px;height:28px;margin:0 auto 4px;display:block}
-.tb-t{font-size:10px;font-weight:700;color:#333}.tb-d{font-size:9px;color:#888}
+.tb-ic{width:28px;height:28px;margin:0 auto 4px;display:block}.tb-t{font-size:10px;font-weight:700;color:#333}.tb-d{font-size:9px;color:#888}
 .ft{text-align:center;padding:20px 16px 28px;font-size:10px;color:#aaa;border-top:1px solid #eee;max-width:960px;margin:10px auto 0}
 .ft a{color:var(--pk);text-decoration:none;font-weight:600}
 .fb{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:1px solid #eee;padding:10px 16px;display:none;justify-content:center;align-items:center;gap:16px;z-index:60;box-shadow:0 -4px 16px rgba(0,0,0,.07);animation:slideUp .35s cubic-bezier(.16,1,.3,1)}
@@ -106,6 +104,8 @@ img{max-width:100%;display:block}button{font-family:inherit;cursor:pointer}
 .dw-qb{width:24px;height:24px;border-radius:50%;border:1px solid #ddd;background:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;color:var(--pk)}
 .dw-qv{font-weight:800;font-size:12px;color:var(--pk);min-width:12px;text-align:center}
 .dw-ft{padding:14px 18px 24px;border-top:1px solid #eee;background:#FFFBFC}
+.dw-tr{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.dw-tl{font-size:12px;color:#888}.dw-tv{font-size:20px;font-weight:800;color:var(--pk)}
 .bt-sd{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:linear-gradient(135deg,var(--wa),var(--wad));color:#fff;border:none;border-radius:12px;padding:14px;font-size:14px;font-weight:700;box-shadow:0 4px 16px rgba(37,211,102,.3);transition:.2s}
 .bt-sd:hover{filter:brightness(1.06)}
 .bt-sd svg{width:20px;height:20px;flex-shrink:0}
@@ -116,18 +116,19 @@ img{max-width:100%;display:block}button{font-family:inherit;cursor:pointer}
 .dw-cup-code{font-size:11px;opacity:.85;margin-bottom:8px}
 .dw-cup-prices{display:flex;justify-content:center;align-items:baseline;gap:10px;margin-bottom:8px}
 .dw-cup-old{font-size:13px;text-decoration:line-through;opacity:.6}
-.dw-cup-new{font-size:22px;font-weight:800}
+.dw-cup-new{font-size:22px;font-weight:800;color:#fff}
 .dw-cup-timer{display:flex;align-items:center;justify-content:center;gap:6px;font-size:12px;font-weight:700;color:#FFD54F}
 .dw-cup-pulse{width:8px;height:8px;border-radius:50%;background:#FFD54F;animation:pls 1s infinite}
 body.hs{padding-bottom:80px}
 .dp{margin:24px auto 0;padding:0}
 .dp-hd{max-width:960px;margin:0 auto 16px;padding:0 16px;display:flex;align-items:center;justify-content:center}
 .dp-t{font-size:18px;font-weight:700}
+.dp-st{font-size:11px;color:#888}
 .dp-scroll{overflow-x:auto;overflow-y:hidden;white-space:nowrap;padding:4px 16px 14px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .dp-scroll::-webkit-scrollbar{display:none}
-.dp-cd{display:inline-block;vertical-align:top;white-space:normal;width:200px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06);margin-right:14px;position:relative;transition:.2s}
+.dp-cd{display:inline-block;vertical-align:top;white-space:normal;width:200px;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06);margin-right:14px;position:relative}
 .dp-cd:hover{box-shadow:0 6px 20px rgba(0,0,0,.1);transform:translateY(-2px)}
-.dp-ph{width:200px;height:267px;object-fit:cover;background:#f0f0f0;display:block}
+.dp-ph{width:100%;aspect-ratio:3/4;object-fit:cover;background:#f0f0f0;display:block}
 .dp-stars{position:absolute;left:50%;transform:translateX(-50%);bottom:auto;display:flex;gap:2px;background:#fff;padding:4px 10px;border-radius:6px;box-shadow:0 2px 8px rgba(0,0,0,.1);z-index:2}
 .dp-star{color:var(--pk2);font-size:14px}
 .dp-info{padding:14px 14px 16px;text-align:center}
@@ -136,199 +137,269 @@ body.hs{padding-bottom:80px}
 .dp-vf svg{width:8px;height:8px}
 .dp-tx{font-size:11px;color:#666;line-height:1.5;margin-top:6px}
 .dp-tg{display:inline-flex;align-items:center;gap:4px;margin-top:8px;background:#F0FDF4;color:var(--gr);font-size:9px;font-weight:600;padding:3px 8px;border-radius:5px}
+.dp-nav{display:flex;gap:8px;align-items:center}
+.dp-arr{width:32px;height:32px;border-radius:50%;border:1px solid #ddd;background:#fff;display:flex;align-items:center;justify-content:center;font-size:14px;color:#666;box-shadow:0 1px 4px rgba(0,0,0,.06);transition:.15s}
+.dp-arr:hover{background:#f8f8f8;border-color:#bbb}
 .oe{max-width:960px;margin:32px auto 28px;padding:0 16px;text-align:center}
 .oe-t{font-size:18px;font-weight:700;margin-bottom:16px;color:#333}
 .oe-wrap{overflow:hidden;position:relative;mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
 .oe-track{display:flex;gap:56px;align-items:center;animation:oeScroll 20s linear infinite;width:max-content}
 .oe-track:hover{animation-play-state:paused}
-.oe-logo{height:36px;width:auto;object-fit:contain;flex-shrink:0;transition:.3s}
+.oe-logo{height:36px;width:auto;object-fit:contain;flex-shrink:0;opacity:1;transition:.3s}
 .oe-logo:hover{transform:scale(1.05)}
+@keyframes oeScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 </style>
 </head>
 <body>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6ND5J84" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <div class="tk"><div class="tk-t">
 <span class="tk-i">🚚 Frete Grátis acima de R$100</span><span class="tk-i">💳 Parcele em até 6x sem Juros</span><span class="tk-i">💚 5% de desconto no PIX</span><span class="tk-i">💬 Atendimento exclusivo WhatsApp</span>
 <span class="tk-i">🚚 Frete Grátis acima de R$100</span><span class="tk-i">💳 Parcele em até 6x sem Juros</span><span class="tk-i">💚 5% de desconto no PIX</span><span class="tk-i">💬 Atendimento exclusivo WhatsApp</span>
 </div></div>
+
 <header class="hd"><div class="hd-in">
 <a href="https://rosaselvagemoficial.com.br/" class="hd-br">
-<img src="img/img-1.svg" alt="Rosa Selvagem" width="140" height="18" onerror="this.style.display='none'">
+<img src="img/img-1.svg" alt="Rosa Selvagem" onerror="this.style.display='none'">
 <div class="hd-sb">Catálogo WhatsApp</div>
 </a>
-<button class="ct-b" id="cBtn" onclick="openDw()" aria-label="Abrir carrinho">
-<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-<span class="ct-bg" id="bg" aria-live="polite">0</span>
+<button class="ct-b" id="cBtn" onclick="openDw()">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+<span class="ct-bg" id="bg">0</span>
 </button>
 </div></header>
+
+<!-- ===== BANNER - Troque o src abaixo pela imagem do banner ===== -->
 <section class="hr">
-<img src="img/img-2.webp" alt="Oferta especial Rosa Selvagem — Os melhores kits com até 50% OFF" width="1920" height="800" fetchpriority="high">
+<img src="img/img-2.webp" alt="Banner Rosa Selvagem">
 </section>
+
 <section class="sc">
-<div class="sc-hd">
-<h1 class="sc-t">Mais vendidos com até 50%OFF</h1>
-<span class="sc-c" id="scCt">0 itens selecionados</span>
-</div>
+<div class="sc-hd"><h2 class="sc-t">Mais vendidos com até 50%OFF</h2><span class="sc-c" id="scCt">0 itens selecionados</span></div>
 <div class="gd" id="grid"></div>
+
+<!-- ===== MONTE SEU KIT ===== -->
 <div class="mk">
 <a href="#" onclick="monteKit();return false">
-<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
 MONTE SEU KIT PERSONALIZADO
 </a>
 </div>
+
 </section>
+
+<!-- ===== DEPOIMENTOS ===== -->
 <section class="dp">
-<div class="dp-hd"><h2 class="dp-t">Quem comprou, amou!</h2></div>
-<div class="dp-scroll">
-<div class="dp-cd"><div style="position:relative"><img class="dp-ph" src="img/img-3.webp" alt="Dylainne recebeu seu pedido Rosa Selvagem" width="440" height="586" loading="lazy"><div class="dp-stars" style="bottom:-14px"><span class="dp-star" aria-hidden="true">★★★★★</span></div></div><div class="dp-info"><div class="dp-nm">Dylainne <span class="dp-vf" aria-label="compra verificada"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" width="8" height="8" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span></div><p class="dp-tx">Comprei pelo WhatsApp e chegou tudo certinho! Amei a embalagem e os produtos são incríveis 🌹</p><div class="dp-tg">✓ Comprou pelo WhatsApp</div></div></div>
-<div class="dp-cd"><div style="position:relative"><img class="dp-ph" src="img/img-4.webp" alt="Evelyn recebeu seu pedido Rosa Selvagem" width="440" height="586" loading="lazy"><div class="dp-stars" style="bottom:-14px"><span class="dp-star" aria-hidden="true">★★★★★</span></div></div><div class="dp-info"><div class="dp-nm">Evelyn <span class="dp-vf" aria-label="compra verificada"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" width="8" height="8" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span></div><p class="dp-tx">Atendimento maravilhoso pelo WhatsApp, me ajudaram a escolher o kit perfeito. Super recomendo!</p><div class="dp-tg">✓ Comprou pelo WhatsApp</div></div></div>
-<div class="dp-cd"><div style="position:relative"><img class="dp-ph" src="img/img-5.webp" alt="Jenny recebeu seu pedido Rosa Selvagem" width="440" height="586" loading="lazy"><div class="dp-stars" style="bottom:-14px"><span class="dp-star" aria-hidden="true">★★★★★</span></div></div><div class="dp-info"><div class="dp-nm">Jenny <span class="dp-vf" aria-label="compra verificada"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" width="8" height="8" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span></div><p class="dp-tx">Já é minha terceira compra pelo WhatsApp! Sempre chega rápido e bem embalado. Amo demais 💕</p><div class="dp-tg">✓ Comprou pelo WhatsApp</div></div></div>
-<div class="dp-cd"><div style="position:relative"><img class="dp-ph" src="img/img-6.webp" alt="Marcella recebeu seu pedido Rosa Selvagem" width="440" height="586" loading="lazy"><div class="dp-stars" style="bottom:-14px"><span class="dp-star" aria-hidden="true">★★★★★</span></div></div><div class="dp-info"><div class="dp-nm">Marcella <span class="dp-vf" aria-label="compra verificada"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" width="8" height="8" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span></div><p class="dp-tx">Chegouuu! Muito feliz com meu pedido, atendimento nota 10 pelo WhatsApp. Entrega super rápida!</p><div class="dp-tg">✓ Comprou pelo WhatsApp</div></div></div>
-<div class="dp-cd"><div style="position:relative"><img class="dp-ph" src="img/img-7.webp" alt="Ravena recebeu seu pedido Rosa Selvagem" width="440" height="586" loading="lazy"><div class="dp-stars" style="bottom:-14px"><span class="dp-star" aria-hidden="true">★★★★★</span></div></div><div class="dp-info"><div class="dp-nm">Ravena <span class="dp-vf" aria-label="compra verificada"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" width="8" height="8" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span></div><p class="dp-tx">Meu recebido pago! Produtos originais e resultado incrível. Comprem sem medo pelo WhatsApp ✓</p><div class="dp-tg">✓ Comprou pelo WhatsApp</div></div></div>
-<div class="dp-cd"><div style="position:relative"><img class="dp-ph" src="img/img-8.webp" alt="Simara recebeu seu pedido Rosa Selvagem" width="440" height="586" loading="lazy"><div class="dp-stars" style="bottom:-14px"><span class="dp-star" aria-hidden="true">★★★★★</span></div></div><div class="dp-info"><div class="dp-nm">Simara <span class="dp-vf" aria-label="compra verificada"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" width="8" height="8" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></span></div><p class="dp-tx">Recebi tudo lindo! O atendimento pelo WhatsApp é muito prático e confiável. Já quero mais!</p><div class="dp-tg">✓ Comprou pelo WhatsApp</div></div></div>
+<div class="dp-hd" style="justify-content:center">
+<h2 class="dp-t">Quem comprou, amou!</h2>
+</div>
+<div class="dp-scroll" id="dpScroll">
+<div class="dp-cd">
+<div style="position:relative">
+<img class="dp-ph" src="img/img-3.webp" alt="Foto de Dylainne">
+<div class="dp-stars" style="bottom:-14px"><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span></div>
+</div>
+<div class="dp-info">
+<div class="dp-nm">Dylainne <span class="dp-vf"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+<p class="dp-tx">Comprei pelo WhatsApp e chegou tudo certinho! Amei a embalagem e os produtos são incríveis 🌹</p>
+<div class="dp-tg">✓ Comprou pelo WhatsApp</div>
+</div>
+</div>
+<div class="dp-cd">
+<div style="position:relative">
+<img class="dp-ph" src="img/img-4.webp" alt="Foto de Evelyn">
+<div class="dp-stars" style="bottom:-14px"><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span></div>
+</div>
+<div class="dp-info">
+<div class="dp-nm">Evelyn <span class="dp-vf"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+<p class="dp-tx">Atendimento maravilhoso pelo WhatsApp, me ajudaram a escolher o kit perfeito. Super recomendo!</p>
+<div class="dp-tg">✓ Comprou pelo WhatsApp</div>
+</div>
+</div>
+<div class="dp-cd">
+<div style="position:relative">
+<img class="dp-ph" src="img/img-5.webp" alt="Foto de Jenny">
+<div class="dp-stars" style="bottom:-14px"><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span></div>
+</div>
+<div class="dp-info">
+<div class="dp-nm">Jenny <span class="dp-vf"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+<p class="dp-tx">Já é minha terceira compra pelo WhatsApp! Sempre chega rápido e bem embalado. Amo demais 💕</p>
+<div class="dp-tg">✓ Comprou pelo WhatsApp</div>
+</div>
+</div>
+<div class="dp-cd">
+<div style="position:relative">
+<img class="dp-ph" src="img/img-6.webp" alt="Foto de Marcella">
+<div class="dp-stars" style="bottom:-14px"><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span></div>
+</div>
+<div class="dp-info">
+<div class="dp-nm">Marcella <span class="dp-vf"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+<p class="dp-tx">Chegouuu! Muito feliz com meu pedido, atendimento nota 10 pelo WhatsApp. Entrega super rápida!</p>
+<div class="dp-tg">✓ Comprou pelo WhatsApp</div>
+</div>
+</div>
+<div class="dp-cd">
+<div style="position:relative">
+<img class="dp-ph" src="img/img-7.webp" alt="Foto de Ravena">
+<div class="dp-stars" style="bottom:-14px"><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span></div>
+</div>
+<div class="dp-info">
+<div class="dp-nm">Ravena <span class="dp-vf"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+<p class="dp-tx">Meu recebido pago! Produtos originais e resultado incrível. Comprem sem medo pelo WhatsApp ✓</p>
+<div class="dp-tg">✓ Comprou pelo WhatsApp</div>
+</div>
+</div>
+<div class="dp-cd">
+<div style="position:relative">
+<img class="dp-ph" src="img/img-8.webp" alt="Foto de Simara">
+<div class="dp-stars" style="bottom:-14px"><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span><span class="dp-star">★</span></div>
+</div>
+<div class="dp-info">
+<div class="dp-nm">Simara <span class="dp-vf"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span></div>
+<p class="dp-tx">Recebi tudo lindo! O atendimento pelo WhatsApp é muito prático e confiável. Já quero mais!</p>
+<div class="dp-tg">✓ Comprou pelo WhatsApp</div>
+</div>
+</div>
+
 </div>
 </section>
+
+<!-- ===== ONDE ESTAMOS ===== -->
 <section class="oe">
 <h2 class="oe-t">Onde estamos</h2>
-<div class="oe-wrap"><div class="oe-track">
-<img class="oe-logo" src="img/img-9.png"  alt="Drogasil"           width="312" height="60" loading="lazy">
-<img class="oe-logo" src="img/img-10.png" alt="Pague Menos"        width="189" height="60" loading="lazy">
-<img class="oe-logo" src="img/img-11.png" alt="Farmácias São João" width="223" height="60" loading="lazy">
-<img class="oe-logo" src="img/img-12.png" alt="Goya Perfumaria"    width="64"  height="60" loading="lazy">
-<img class="oe-logo" src="img/img-13.png" alt="Mix Mateus"         width="208" height="60" loading="lazy">
-<img class="oe-logo" src="img/img-14.png" alt="Novo Atacarejo"     width="95"  height="60" loading="lazy">
-<img class="oe-logo" src="img/img-15.png" alt="Shopping Recife"    width="165" height="60" loading="lazy">
-<img class="oe-logo" src="img/img-16.png" alt="" aria-hidden="true" width="312" height="60" loading="lazy">
-<img class="oe-logo" src="img/img-17.png" alt="" aria-hidden="true" width="189" height="60" loading="lazy">
-<img class="oe-logo" src="img/img-18.png" alt="" aria-hidden="true" width="223" height="60" loading="lazy">
-<img class="oe-logo" src="img/img-19.png" alt="" aria-hidden="true" width="64"  height="60" loading="lazy">
-<img class="oe-logo" src="img/img-20.png" alt="" aria-hidden="true" width="208" height="60" loading="lazy">
-<img class="oe-logo" src="img/img-21.png" alt="" aria-hidden="true" width="95"  height="60" loading="lazy">
-<img class="oe-logo" src="img/img-22.png" alt="" aria-hidden="true" width="165" height="60" loading="lazy">
-</div></div>
-</section>
-<div class="tb">
-<div class="tb-i"><img class="tb-ic" src="img/img-23.png" alt="" width="40" height="40" loading="lazy" aria-hidden="true"><div class="tb-t">Frete Grátis</div><div class="tb-d">5 a 15 dias úteis</div></div>
-<div class="tb-i"><img class="tb-ic" src="img/img-24.png" alt="" width="40" height="40" loading="lazy" aria-hidden="true"><div class="tb-t">Suporte Humano</div><div class="tb-d">Atendimento dedicado</div></div>
-<div class="tb-i"><img class="tb-ic" src="img/img-25.png" alt="" width="40" height="40" loading="lazy" aria-hidden="true"><div class="tb-t">Compra Segura</div><div class="tb-d">100% protegido</div></div>
-<div class="tb-i"><img class="tb-ic" src="img/img-26.png" alt="" width="40" height="40" loading="lazy" aria-hidden="true"><div class="tb-t">Desconto Exclusivo</div><div class="tb-d">Ofertas incríveis</div></div>
+<div class="oe-wrap">
+<div class="oe-track">
+<img class="oe-logo" src="img/img-9.png" alt="Drogasil">
+<img class="oe-logo" src="img/img-10.png" alt="Pague Menos">
+<img class="oe-logo" src="img/img-11.png" alt="Farmácias São João">
+<img class="oe-logo" src="img/img-12.png" alt="Goya Perfumaria">
+<img class="oe-logo" src="img/img-13.png" alt="Mix Mateus">
+<img class="oe-logo" src="img/img-14.png" alt="Novo Atacarejo">
+<img class="oe-logo" src="img/img-15.png" alt="Shopping Recife">
+<img class="oe-logo" src="img/img-16.png" alt="Drogasil">
+<img class="oe-logo" src="img/img-17.png" alt="Pague Menos">
+<img class="oe-logo" src="img/img-18.png" alt="Farmácias São João">
+<img class="oe-logo" src="img/img-19.png" alt="Goya Perfumaria">
+<img class="oe-logo" src="img/img-20.png" alt="Mix Mateus">
+<img class="oe-logo" src="img/img-21.png" alt="Novo Atacarejo">
+<img class="oe-logo" src="img/img-22.png" alt="Shopping Recife">
 </div>
+</div>
+</section>
+
+<div class="tb">
+<div class="tb-i"><img class="tb-ic" src="img/img-23.png" alt="Frete"><div class="tb-t">Frete Grátis</div><div class="tb-d">5 a 15 dias úteis</div></div>
+<div class="tb-i"><img class="tb-ic" src="img/img-24.png" alt="Suporte"><div class="tb-t">Suporte Humano</div><div class="tb-d">Atendimento dedicado</div></div>
+<div class="tb-i"><img class="tb-ic" src="img/img-25.png" alt="Segura"><div class="tb-t">Compra Segura</div><div class="tb-d">100% protegido</div></div>
+<div class="tb-i"><img class="tb-ic" src="img/img-26.png" alt="Desconto"><div class="tb-t">Desconto Exclusivo</div><div class="tb-d">Ofertas incríveis</div></div>
+</div>
+
 <footer class="ft">
 <div style="font-weight:700;color:#666;margin-bottom:3px">Rosa Selvagem Brasil</div>
 <p>CNPJ: 46.643.218/0001-65 | Todos os direitos reservados</p>
 <p style="margin-top:3px"><a href="https://rosaselvagemoficial.com.br/">Visitar loja completa →</a></p>
 </footer>
+
 <div class="fb" id="fbar">
-<div><div class="fb-ct" id="fbCt">0 itens</div><div class="fb-tl" id="fbTl">R$ 0,00</div></div>
-<button class="bt-wa" onclick="openDw()" aria-label="Comprar pelo WhatsApp">
-<svg viewBox="0 0 24 24" fill="#fff" width="18" height="18" aria-hidden="true"><path d="M12.05 2a9.86 9.86 0 00-8.37 4.66A9.82 9.82 0 002.16 12c0 1.86.52 3.67 1.5 5.24l-1.6 5.83 5.98-1.57A9.84 9.84 0 0012.05 22c5.47 0 9.9-4.44 9.9-9.9S17.52 2 12.05 2zm5.42 13.61c-.23.65-.47.71-.79.73a4.6 4.6 0 01-1.39-.09 12.3 12.3 0 01-5.28-4.65c-.82-1.09-1.38-2.29-1.54-2.68a2.68 2.68 0 01.79-2.83c.22-.22.47-.29.63-.29h.45c.2 0 .39.08.57.54.23.56.77 1.9.84 2.04.07.13.04.3-.04.46-.09.17-.13.27-.26.42-.13.14-.28.32-.4.43-.13.12-.27.26-.12.52.16.26.7 1.16 1.5 1.87.78.62 1.48.93 1.83 1.08.26.11.42.08.58-.06.16-.14.66-.77.84-1.04.18-.26.35-.22.59-.13.24.09 1.52.72 1.78.85.26.13.44.2.5.3.07.11.07.66-.16 1.3z"/></svg>
+<div><div class="fb-ct" id="fbCt">0</div><div class="fb-tl" id="fbTl">R$ 0</div></div>
+<button class="bt-wa" onclick="openDw()">
+<svg viewBox="0 0 24 24" fill="#fff"><path d="M12.05 2a9.86 9.86 0 00-8.37 4.66A9.82 9.82 0 002.16 12c0 1.86.52 3.67 1.5 5.24l-1.6 5.83 5.98-1.57A9.84 9.84 0 0012.05 22c5.47 0 9.9-4.44 9.9-9.9S17.52 2 12.05 2zm5.42 13.61c-.23.65-.47.71-.79.73a4.6 4.6 0 01-1.39-.09 12.3 12.3 0 01-5.28-4.65c-.82-1.09-1.38-2.29-1.54-2.68a2.68 2.68 0 01.79-2.83c.22-.22.47-.29.63-.29h.45c.2 0 .39.08.57.54.23.56.77 1.9.84 2.04.07.13.04.3-.04.46-.09.17-.13.27-.26.42-.13.14-.28.32-.4.43-.13.12-.27.26-.12.52.16.26.7 1.16 1.5 1.87.78.62 1.48.93 1.83 1.08.26.11.42.08.58-.06.16-.14.66-.77.84-1.04.18-.26.35-.22.59-.13.24.09 1.52.72 1.78.85.26.13.44.2.5.3.07.11.07.66-.16 1.3z"/></svg>
 Comprar pelo WhatsApp</button>
 </div>
+
 <div class="ov" id="ov" onclick="closeDw()">
 <div class="dw" onclick="event.stopPropagation()">
-<div class="dw-hd"><div><div class="dw-t">Seu Pedido 🌹</div><div class="dw-st">Revise e envie pelo WhatsApp</div></div><button class="dw-cl" onclick="closeDw()" aria-label="Fechar carrinho">✕</button></div>
+<div class="dw-hd"><div><div class="dw-t">Seu Pedido 🌹</div><div class="dw-st">Revise e envie pelo WhatsApp</div></div><button class="dw-cl" onclick="closeDw()">✕</button></div>
 <div class="dw-bd" id="dwBd"></div>
 <div class="dw-ft" id="dwFt" style="display:none">
-<div class="dw-cup">
+<div class="dw-cup" id="dwCup">
 <div class="dw-cup-tag">🎉 Cupom ativado!</div>
 <div class="dw-cup-title">Você ganhou 15%OFF EXTRA</div>
 <div class="dw-cup-code">Desconto exclusivo para compras pelo WhatsApp</div>
-<div class="dw-cup-prices"><span class="dw-cup-old" id="dwOld">R$ 0,00</span><span class="dw-cup-new" id="dwNew">R$ 0,00</span></div>
-<div class="dw-cup-timer"><span class="dw-cup-pulse" aria-hidden="true"></span> Cupom expira em <span id="dwTimer" aria-live="polite">2:00</span></div>
+<div class="dw-cup-prices">
+<span class="dw-cup-old" id="dwOld">R$ 0</span>
+<span class="dw-cup-new" id="dwNew">R$ 0</span>
+</div>
+<div class="dw-cup-timer"><span class="dw-cup-pulse"></span> Cupom expira em <span id="dwTimer">2:00</span></div>
 </div>
 <button class="bt-sd" onclick="send()">
-<svg viewBox="0 0 24 24" fill="#fff" width="20" height="20" aria-hidden="true"><path d="M12.05 2a9.86 9.86 0 00-8.37 4.66A9.82 9.82 0 002.16 12c0 1.86.52 3.67 1.5 5.24l-1.6 5.83 5.98-1.57A9.84 9.84 0 0012.05 22c5.47 0 9.9-4.44 9.9-9.9S17.52 2 12.05 2zm5.42 13.61c-.23.65-.47.71-.79.73a4.6 4.6 0 01-1.39-.09 12.3 12.3 0 01-5.28-4.65c-.82-1.09-1.38-2.29-1.54-2.68a2.68 2.68 0 01.79-2.83c.22-.22.47-.29.63-.29h.45c.2 0 .39.08.57.54.23.56.77 1.9.84 2.04.07.13.04.3-.04.46-.09.17-.13.27-.26.42-.13.14-.28.32-.4.43-.13.12-.27.26-.12.52.16.26.7 1.16 1.5 1.87.78.62 1.48.93 1.83 1.08.26.11.42.08.58-.06.16-.14.66-.77.84-1.04.18-.26.35-.22.59-.13.24.09 1.52.72 1.78.85.26.13.44.2.5.3.07.11.07.66-.16 1.3z"/></svg>
+<svg viewBox="0 0 24 24" fill="#fff"><path d="M12.05 2a9.86 9.86 0 00-8.37 4.66A9.82 9.82 0 002.16 12c0 1.86.52 3.67 1.5 5.24l-1.6 5.83 5.98-1.57A9.84 9.84 0 0012.05 22c5.47 0 9.9-4.44 9.9-9.9S17.52 2 12.05 2zm5.42 13.61c-.23.65-.47.71-.79.73a4.6 4.6 0 01-1.39-.09 12.3 12.3 0 01-5.28-4.65c-.82-1.09-1.38-2.29-1.54-2.68a2.68 2.68 0 01.79-2.83c.22-.22.47-.29.63-.29h.45c.2 0 .39.08.57.54.23.56.77 1.9.84 2.04.07.13.04.3-.04.46-.09.17-.13.27-.26.42-.13.14-.28.32-.4.43-.13.12-.27.26-.12.52.16.26.7 1.16 1.5 1.87.78.62 1.48.93 1.83 1.08.26.11.42.08.58-.06.16-.14.66-.77.84-1.04.18-.26.35-.22.59-.13.24.09 1.52.72 1.78.85.26.13.44.2.5.3.07.11.07.66-.16 1.3z"/></svg>
 <span id="sTxt">Garantir desconto pelo WhatsApp</span></button>
 <p class="dw-ds">Você será redirecionado ao WhatsApp com o pedido e desconto aplicado</p>
 </div>
 </div>
 </div>
+
 <script>
 var sellers=['5581991793825','5581988711700','5581997756169','5581995507046'];
 function getW(){return sellers[Math.floor(Math.random()*sellers.length)]}
-var C={};
-/* ── PRODUTOS — edite aqui para adicionar/alterar produtos ──────────────
-   id: número único | n: nome | p: preço | o: original (0=ocultar)
-   d: % desconto badge (0=ocultar) | g: imagem em img/ | f: frete grátis | i: parcela texto */
-var P=[
-  {id:1,n:'Óleo Corporal Rosa Selvagem 100ml',       p:99.90, o:147.00,d:32,g:'img/img-27.webp',f:true, i:'16,65'},
-  {id:2,n:'Kit Corpo Perfeito Rosa Selvagem',         p:149.90,o:220.00,d:32,g:'img/img-27.webp',f:true, i:'24,98'},
-  {id:3,n:'Sérum Clareador Rosa Mosqueta 30ml',       p:89.90, o:130.00,d:31,g:'img/img-27.webp',f:false,i:'14,98'},
-  {id:4,n:'Sabonete Líquido Íntimo Rosa Candu 200ml', p:49.90, o:75.00, d:33,g:'img/img-27.webp',f:false,i:'8,32'},
-  {id:5,n:'Kit Completo Virilha & Entregion',         p:179.90,o:260.00,d:31,g:'img/img-27.webp',f:true, i:'29,98'},
-  {id:6,n:'Óleo de Rosa Mosqueta 100% Puro 30ml',     p:69.90, o:100.00,d:30,g:'img/img-27.webp',f:false,i:'11,65'}
+var C={},
+P=[
+{id:1,n:'RELAMPAGO - Óleo Clareador Corporal',p:99.9,o:147,d:32,g:'img/img-27.webp',i:'18,49',f:0},
+{id:2,n:'RELAMPAGO - Kit Rosa Candy: Sérum Clareador Íntimo + Óleo',p:189,o:226,d:16,g:'img/img-28.webp',i:'34,98',f:1},
+{id:3,n:'RELAMPAGO - Kit MC Mirella - Clareador de PPK',p:239.9,o:323,d:26,g:'img/img-29.webp',i:'44,40',f:1},
+{id:4,n:'RELAMPAGO - Duplo Clareamento',p:199.9,o:263,d:24,g:'img/img-30.webp',i:'36,99',f:1},
+{id:5,n:'Sérum Lifting Anti-Aging',p:69.99,o:84,d:17,g:'img/img-31.webp',i:'12,95',f:0},
+{id:6,n:'Sérum Candy Clareador Íntimo',p:97,o:129,d:25,g:'img/img-32.webp',i:'17,95',f:0},
+{id:7,n:'Kit Rosa Candy - Clareamento Completo',p:289.9,o:373,d:22,g:'img/img-33.webp',i:'53,65',f:1},
+{id:8,n:'Kit Mirella + Body Splash Secrets',p:279.9,o:323,d:13,g:'img/img-34.webp',i:'51,80',f:1},
+{id:9,n:'Kit Verão - Clareador de PPK + Iluminador Gold',p:259.9,o:323,d:20,g:'img/img-35.webp',i:'48,10',f:1},
+{id:10,n:'Kit Secrets - Vida Bela',p:279.9,o:323,d:13,g:'img/img-36.webp',i:'51,80',f:1}
 ];
-function fm(v){return'R$ '+v.toFixed(2).replace('.',',')}
-function gc(){return Object.keys(C).length>0}
-function gi(){return Object.keys(C).map(function(id){var p=P.find(function(x){return x.id==id});return{id:p.id,n:p.n,p:p.p,q:C[id],img:p.g}})}
-function gt(){return gi().reduce(function(a,i){return a+i.p*i.q},0)}
-function up(){
-  var n=Object.values(C).reduce(function(a,v){return a+v},0),t=gt();
-  document.getElementById('bg').textContent=n;
-  document.getElementById('bg').className='ct-bg'+(n>0?' on':'');
-  document.getElementById('cBtn').className='ct-b'+(n>0?' on':'');
-  document.getElementById('fbCt').textContent=n+' item'+(n!==1?'s':'');
-  document.getElementById('fbTl').textContent=fm(t);
-  document.getElementById('scCt').textContent=n+' item'+(n!==1?'s':'')+' selecionado'+(n!==1?'s':'');
-  document.getElementById('fbar').className='fb'+(n>0?' on':'');
-}
+var B='';
+function fm(v){return v.toLocaleString('pt-BR',{style:'currency',currency:'BRL'})}
+function gi(){return Object.entries(C).map(function(e){var r=P.find(function(x){return x.id==+e[0]});return{id:r.id,n:r.n,p:r.p,img:r.g,q:e[1]}})}
+function gt(){return gi().reduce(function(s,i){return s+i.p*i.q},0)}
+function gc(){return Object.values(C).reduce(function(s,q){return s+q},0)}
 function render(){
-  document.getElementById('grid').innerHTML=P.map(function(p,i){
-    var s=!!C[p.id];
-    return'<div class="cd'+(s?' sel':'')+'" style="animation-delay:'+i*.04+'s" onclick="tog('+p.id+')">'
-      +(p.d?'<div class="cd-dc">\u2193 '+p.d+'%</div>':'')
-      +(s?'<div class="cd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" width="12" height="12" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></div>':'')
-      +'<div class="cd-iw"><div class="cd-sk" id="sk'+p.id+'"></div>'
-      +'<img class="cd-im" src="'+p.g+'" alt="'+p.n+'" width="400" height="400" loading="lazy" decoding="async"'
-      +' onload="this.classList.add(\'ld\');var sk=document.getElementById(\'sk'+p.id+'\');if(sk)sk.style.display=\'none\'"></div>'
-      +'<div class="cd-bd"><h3 class="cd-nm">'+p.n+'</h3>'
-      +'<div class="cd-pr"><div class="cd-p1"><span class="cd-pv">'+fm(p.p)+'</span>'+(p.o?'<span class="cd-po">'+fm(p.o)+'</span>':'')+'</div>'
-      +'<div class="cd-pi">até <strong>6x</strong> de <strong>R$ '+p.i+'</strong></div>'
-      +'<div class="cd-fs '+(p.f?'fr':'ec')+'">'+(p.f?'✓ Frete Grátis':'Frete Econômico')+'</div></div>'
-      +'<div class="cd-ac">'+(s
-        ?'<div class="qt-c" onclick="event.stopPropagation()"><button class="qt-b" onclick="cq('+p.id+',-1)" aria-label="Remover">\u2212</button><span class="qt-v" aria-live="polite">'+C[p.id]+'</span><button class="qt-b" onclick="cq('+p.id+',1)" aria-label="Adicionar">+</button></div>'
-        :'<button class="bt-sl" onclick="event.stopPropagation();tog('+p.id+')">ADICIONAR AO CARRINHO</button>')
-      +'</div></div></div>'
-  }).join('');
-  up();
-}
+var c=gc(),t=gt(),g=document.getElementById('grid'),bg=document.getElementById('bg'),cb=document.getElementById('cBtn'),fb=document.getElementById('fbar');
+if(c>0){bg.textContent=c;bg.className='ct-bg on';cb.className='ct-b on'}else{bg.className='ct-bg';cb.className='ct-b'}
+if(c>0){fb.className='fb on';document.getElementById('fbCt').textContent=c+(c===1?' kit':' kits');document.getElementById('fbTl').textContent=fm(t);document.body.className='hs'}else{fb.className='fb';document.body.className=''}
+document.getElementById('scCt').textContent=c+(c===1?' item selecionado':' itens selecionados');
+g.innerHTML=P.map(function(p,i){var s=!!C[p.id];
+return '<div class="cd'+(s?' sel':'')+'" style="animation-delay:'+i*.04+'s" onclick="tog('+p.id+')">'
++(p.d?'<div class="cd-dc">\u2193 '+p.d+'%</div>':'')
++(s?'<div class="cd-ck"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>':'')
++'<div class="cd-iw"><div class="cd-sk" id="sk'+p.id+'"></div><img class="cd-im" src="'+p.g+'" alt="" loading="lazy" onload="this.classList.add(\'ld\');document.getElementById(\'sk'+p.id+'\').style.display=\'none\'"></div>'
++'<div class="cd-bd"><h3 class="cd-nm">'+p.n+'</h3><div class="cd-pr"><div class="cd-p1"><span class="cd-pv">'+fm(p.p)+'</span>'+(p.o?'<span class="cd-po">'+fm(p.o)+'</span>':'')+'</div>'
++'<div class="cd-pi">até <strong>6x</strong> de <strong>R$ '+p.i+'</strong></div>'
++'<div class="cd-fs '+(p.f?'fr':'ec')+'">'+(p.f?'Frete Grátis':'Frete Econômico')+'</div></div>'
++'<div class="cd-ac">'+(s?'<div class="qt-c" onclick="event.stopPropagation()"><button class="qt-b" onclick="cq('+p.id+',-1)">\u2212</button><span class="qt-v">'+C[p.id]+'</span><button class="qt-b" onclick="cq('+p.id+',1)">+</button></div>':'<button class="bt-sl" onclick="event.stopPropagation();tog('+p.id+')">ADICIONAR AO CARRINHO</button>')
++'</div></div></div>'}).join('')}
 var timerInterval=null,timerSec=120;
 function rDw(){
-  var bd=document.getElementById('dwBd'),ft=document.getElementById('dwFt'),its=gi();
-  if(!its.length){bd.innerHTML='<p class="dw-em">Nenhum kit selecionado ainda</p>';ft.style.display='none';return}
-  bd.innerHTML=its.map(function(it){
-    return'<div class="dw-it"><img class="dw-ig" src="'+it.img+'" alt="'+it.n+'" width="48" height="48" loading="lazy">'
-      +'<div class="dw-inf"><div class="dw-inm">'+it.n+'</div><div class="dw-ip">'+it.q+'x '+fm(it.p)+' = <strong>'+fm(it.p*it.q)+'</strong></div></div>'
-      +'<div class="dw-q"><button class="dw-qb" onclick="cq('+it.id+',-1)" aria-label="Remover">\u2212</button><span class="dw-qv" aria-live="polite">'+it.q+'</span><button class="dw-qb" onclick="cq('+it.id+',1)" aria-label="Adicionar">+</button></div></div>'
-  }).join('');
-  ft.style.display='block';
-  var total=gt(),disc=total*0.85;
-  document.getElementById('dwOld').textContent=fm(total);
-  document.getElementById('dwNew').textContent=fm(disc);
-}
+var bd=document.getElementById('dwBd'),ft=document.getElementById('dwFt'),its=gi();
+if(!its.length){bd.innerHTML='<p class="dw-em">Nenhum kit selecionado</p>';ft.style.display='none';return}
+bd.innerHTML=its.map(function(it){return '<div class="dw-it"><img class="dw-ig" src="'+it.img+'" alt="">'
++'<div class="dw-inf"><div class="dw-inm">'+it.n+'</div><div class="dw-ip">'+it.q+'x '+fm(it.p)+' = <strong>'+fm(it.p*it.q)+'</strong></div></div>'
++'<div class="dw-q"><button class="dw-qb" onclick="cq('+it.id+',-1)">\u2212</button><span class="dw-qv">'+it.q+'</span><button class="dw-qb" onclick="cq('+it.id+',1)">+</button></div></div>'}).join('');
+ft.style.display='block';
+var total=gt(),disc=total*0.85;
+document.getElementById('dwOld').textContent=fm(total);
+document.getElementById('dwNew').textContent=fm(disc)}
 function startTimer(){
-  timerSec=120;if(timerInterval)clearInterval(timerInterval);
-  timerInterval=setInterval(function(){
-    timerSec--;if(timerSec<=0){clearInterval(timerInterval);timerSec=0}
-    var m=Math.floor(timerSec/60),s=timerSec%60;
-    document.getElementById('dwTimer').textContent=m+':'+(s<10?'0':'')+s;
-  },1000);
-}
+timerSec=120;
+if(timerInterval)clearInterval(timerInterval);
+timerInterval=setInterval(function(){
+timerSec--;
+if(timerSec<=0){clearInterval(timerInterval);timerSec=0}
+var m=Math.floor(timerSec/60),s=timerSec%60;
+document.getElementById('dwTimer').textContent=m+':'+(s<10?'0':'')+s;
+},1000)}
 function tog(id){C[id]?delete C[id]:C[id]=1;render();rDw()}
 function cq(id,d){var v=(C[id]||1)+d;v<1?delete C[id]:C[id]=v;render();rDw()}
 function openDw(){if(!gc())return;rDw();startTimer();document.getElementById('ov').className='ov op';document.body.style.overflow='hidden'}
 function closeDw(){document.getElementById('ov').className='ov';document.body.style.overflow=''}
 function send(){
-  var its=gi(),total=gt(),disc=total*0.85;
-  var ls=its.map(function(i){return'\u2022 '+i.q+'x '+i.n+' \u2014 '+fm(i.p*i.q)}).join('\n');
-  var msg='Olá! 🌹 Me interessei pelos seguintes produtos da Rosa Selvagem:\n\n'+ls+'\n\n💰 Subtotal: '+fm(total)+'\n🏷️ Cupom 15%OFF WhatsApp: -'+fm(total*0.15)+'\n✅ Total com desconto: '+fm(disc)+'\n\nPodemos prosseguir com o pedido?';
-  var a=document.createElement('a');a.href='https://wa.me/'+getW()+'?text='+encodeURIComponent(msg);a.target='_blank';a.rel='noopener noreferrer';document.body.appendChild(a);a.click();document.body.removeChild(a);
-  var b=document.getElementById('sTxt');b.textContent='\u2713 Enviado!';setTimeout(function(){b.textContent='Garantir desconto pelo WhatsApp'},3000);
-}
+var its=gi(),total=gt(),disc=total*0.85;
+var ls=its.map(function(i){return'\u2022 '+i.q+'x '+i.n+' \u2014 '+fm(i.p*i.q)}).join('\n');
+var msg='Olá! 🌹 Me interessei pelos seguintes produtos da Rosa Selvagem e gostaria de comprar:\n\n'+ls+'\n\n💰 Subtotal: '+fm(total)+'\n🏷️ Cupom 15%OFF WhatsApp: -'+fm(total*0.15)+'\n✅ Total com desconto: '+fm(disc)+'\n\nPodemos prosseguir com o pedido?';
+var url='https://wa.me/'+getW()+'?text='+encodeURIComponent(msg);
+var a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();document.body.removeChild(a);
+var b=document.getElementById('sTxt');b.textContent='\u2713 Enviado!';setTimeout(function(){b.textContent='Garantir desconto pelo WhatsApp'},3e3)}
 function monteKit(){
-  var msg='Olá! 🌹 Gostaria de montar um kit personalizado com produtos da Rosa Selvagem. Podem me ajudar a escolher os melhores produtos para o meu caso?';
-  var a=document.createElement('a');a.href='https://wa.me/'+getW()+'?text='+encodeURIComponent(msg);a.target='_blank';a.rel='noopener noreferrer';document.body.appendChild(a);a.click();document.body.removeChild(a);
-}
+var msg='Olá! 🌹 Gostaria de montar um kit personalizado com produtos da Rosa Selvagem. Podem me ajudar a escolher os melhores produtos para o meu caso?';
+var url='https://wa.me/'+getW()+'?text='+encodeURIComponent(msg);
+var a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();document.body.removeChild(a)}
 render();
 </script>
 </body>
